@@ -1,0 +1,22 @@
+{
+  "name": "unoperations",
+  "version": "1.0.0",
+  "description": "a simple package that unifies operations between scalars, vectors, quaternions, and other structures",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autumn-pan/unoperations.git"
+  },
+  "keywords": [
+    "math"
+  ],
+  "author": "Autumn Pan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/autumn-pan/unoperations/issues"
+  },
+  "homepage": "https://github.com/autumn-pan/unoperations#readme"
+}
