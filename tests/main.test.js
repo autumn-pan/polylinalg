@@ -112,3 +112,66 @@ test("Matrix Transpose", () => {
     ]));
 }
 );
+test("Vector Addition", () => {
+    const a = new Vector([1, 2, 3]);
+    const b = new Vector([4, 5, 6]);
+    
+    const result = a.add(b);
+    console.log(result);
+    expect(result).toEqual(new Vector([5, 7, 9]));
+}
+);
+test("Vector Subtraction", () => {
+    const a = new Vector([4, 5, 6]);
+    const b = new Vector([1, 2, 3]);
+    
+    const result = a.sub(b);
+    expect(result).toEqual(new Vector([3, 3, 3]));
+}
+);
+test("Vector Dot Product", () => {
+    const a = new Vector([1, 2, 3]);
+    const b = new Vector([4, 5, 6]);
+    
+    const result = a.dot(b);
+    expect(result).toBe(32);
+}
+);
+test("Vector Magnitude", () => {
+    const a = new Vector([3, 4]);
+    
+    const result = a.magnitude();
+    expect(result).toBe(5);
+}
+);
+
+test("Vector Cross Product", () => {
+    const a = new Vector([1, 2, 3]);
+    const b = new Vector([4, 5, 6]);
+    
+    const result = a.cross(b);
+    expect(result).toEqual(new Vector([-3, 6, -3]));
+}
+);
+
+test("Vector Scalar Multiplication", () => {
+    const a = new Vector([1, 2, 3]);
+    const scalar = 2;
+    
+    const result = a.scale(scalar);
+    expect(result).toEqual(new Vector([2, 4, 6]));
+}
+);
+
+test("Matrix-Vector Multiplication", () => {
+    const matrix = new Matrix([
+        [1, 2],
+        [3, 4]
+    ]);
+    const vector = new Vector([5, 6]);
+
+    const result = matrix.mult(vector);
+    console.log(result);
+    expect(result).toEqual(new Matrix([[17], [39]]));
+}
+);
