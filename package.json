@@ -1,17 +1,22 @@
 {
-  "name": "unoperations",
-  "version": "1.0.0",
-  "description": "a simple package that unifies operations between scalars, vectors, quaternions, and other structures",
+  "name": "polylinalg",
+  "version": "0.0.1-alpha",
+  "description": "a simple package that unifies operations between scalars, vectors, and matrices",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/autumn-pan/unoperations.git"
   },
   "keywords": [
-    "math"
+    "math",
+    "linear-algebra",
+    "linalg",
+    "vector",
+    "matrix",
+    "complex"
   ],
   "author": "Autumn Pan",
   "license": "MIT",
